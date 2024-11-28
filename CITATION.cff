@@ -1,10 +1,12 @@
-cff-version: 1.1.0
+cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
 authors:
-  - name: AUTHOR 1
+  - family-names: AUTHOR 1 FAMILY NAME(S)
+    given-names: AUTHOR 1 FIRST NAME(S)
     affiliation: "AFFILIATIONS"
     orcid: "https://orcid.org/ID-HERE"
-  - name: AUTHOR 2
+  - family-names: AUTHOR 1 FAMILY NAME(S)
+    given-names: AUTHOR 1 FIRST NAME(S)
     affiliation: "AFFILIATIONS"
     orcid: "https://orcid.org/ID-HERE"
 title: "lmu-osc/introduction-to-renv: Initial release"
