@@ -212,7 +212,7 @@
     "href": "TOPIC1/page1.html#level-two-1",
     "title": "Page Title Here",
     "section": "Level Two",
-    "text": "Level Two",
+    "text": "Level Two\n\nlibrary(ggplot2)",
     "crumbs": [
       "Home",
       "TOPIC 1",
