@@ -1,5 +1,6 @@
 project:
   type: website
+  pre-render: curl https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/custom.scss -o custom.scss
   
 
 website:
