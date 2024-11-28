@@ -9,7 +9,7 @@ name: Quarto Publish
 
 jobs:
   build-deploy-renv:
-    if: ${{ always() && hashFiles('renv.lock') != '' }}
+    if: ${{ always() && hashFiles('renv.lock') }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
