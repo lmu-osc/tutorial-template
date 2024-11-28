@@ -11,6 +11,6 @@ authors:
     orcid: "https://orcid.org/ID-HERE"
 title: "lmu-osc/introduction-to-renv: Initial release"
 version: GITHUB RELEASE VERSION
-date-released: YYYY-MM-DD
-doi: DOI HERE--EX: 10.5281/zenodo.14230879
-url: DEPLOYED WEBSITE URL HERE
+date-released: "YYYY-MM-DD"
+doi: "DOI HERE--EX: 10.5281/zenodo.14230879"
+url: "DEPLOYED WEBSITE URL HERE"
