@@ -39,7 +39,6 @@ jobs:
         if: ${{ hashFiles('renv.lock') != '' }}
 
   build-deploy-no-renv:
-    if: ${{ always() && hashFiles('renv.lock') == '' }}
     runs-on: ubuntu-latest
     permissions:
       contents: write
