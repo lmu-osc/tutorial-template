@@ -8,8 +8,7 @@ on:
 name: Quarto Publish
 
 jobs:
-  build-deploy-renv:
-    if: ${{ always() && hashFiles('renv.lock') }}
+  build-quarto:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -19,23 +18,25 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        
+
+
+  build-deploy-renv:
+    runs-on: ubuntu-latest
+    needs: build-quarto
+    permissions:
+      contents: write
+    steps:
       - name: Install R with renv
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: renv
+        if: ${{ hashFiles('renv.lock') != '' }}
 
       - name: Install R Dependencies with renv
         uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 1
-
-      - name: Render and Publish
-        uses: quarto-dev/quarto-actions/publish@v2
-        with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        if: ${{ hashFiles('renv.lock') != '' }}
 
   build-deploy-no-renv:
     if: ${{ always() && hashFiles('renv.lock') == '' }}
@@ -43,12 +44,6 @@ jobs:
     permissions:
       contents: write
     steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-
       - name: Cache R packages
         uses: actions/cache@v3
         with:
@@ -56,9 +51,11 @@ jobs:
           key: ${{ runner.os }}-R-${{ hashFiles('**/*.lock') }}
           restore-keys: |
             ${{ runner.os }}-R-
+        if: ${{ hashFiles('renv.lock') == '' }}
 
       - name: Install R latest
         uses: r-lib/actions/setup-r@v2
+        if: ${{ hashFiles('renv.lock') == '' }}
 
       - name: Install R latest dependencies
         run: |
@@ -67,23 +64,18 @@ jobs:
           install.packages("yaml")
           install.packages(renv::dependencies()$Package)
         shell: Rscript {0}
+        if: ${{ hashFiles('renv.lock') == '' }}
 
+  render-and-publish:
+    runs-on: ubuntu-latest
+    needs: [build-deploy-renv, build-deploy-no-renv]
+    permissions:
+      contents: write
+    steps:
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-  check-renv:
-    runs-on: ubuntu-latest
-    outputs:
-      files: ${{ steps.check.outputs.files }}
-    steps:
-      - name: Check out repository
-        uses: actions/checkout@v4
-
-      - name: List files
-        id: check
-        run: |
-          echo "::set-output name=files::$(ls)"
+        if: ${{ hashFiles('renv.lock') != '' }}
