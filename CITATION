@@ -1,0 +1,14 @@
+cff-version: 1.1.0
+message: "If you use this software, please cite it as below."
+authors:
+  - name: AUTHOR 1
+    affiliation: "AFFILIATIONS"
+    orcid: "https://orcid.org/ID-HERE"
+  - name: AUTHOR 2
+    affiliation: "AFFILIATIONS"
+    orcid: "https://orcid.org/ID-HERE"
+title: "lmu-osc/introduction-to-renv: Initial release"
+version: GITHUB RELEASE VERSION
+date-released: YYYY-MM-DD
+doi: DOI HERE--EX: 10.5281/zenodo.14230879
+url: DEPLOYED WEBSITE URL HERE
