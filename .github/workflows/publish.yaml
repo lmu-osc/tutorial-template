@@ -46,10 +46,12 @@ jobs:
 
       - name: Install R latest dependencies
         run: |
+          install.packages("renv")
           install.packages("rmarkdown")
           install.packages("yaml")
           install.packages(renv::dependencies()$Package)
         shell: Rscript {0}
+        if: steps.cache.outputs.cache-hit != 'true' && ${{ hashFiles('renv.lock') == '' }}
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
