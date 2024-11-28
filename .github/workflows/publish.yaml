@@ -36,22 +36,20 @@ jobs:
         if: ${{ hashFiles('renv.lock') == '' }}
 
       - name: Cache R packages
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
-          path: ~/.cache/R
-          key: ${{ runner.os }}-R-${{ hashFiles('**/*.lock') }}-${{ hashFiles('**/*.R') }}
+          path: ~/.R
+          key: ${{ runner.os }}-R-${{ hashFiles('**/*.R') }}
           restore-keys: |
             ${{ runner.os }}-R-
         if: ${{ hashFiles('renv.lock') == '' }}
 
       - name: Install R latest dependencies
         run: |
-          install.packages("renv")
           install.packages("rmarkdown")
           install.packages("yaml")
           install.packages(renv::dependencies()$Package)
         shell: Rscript {0}
-        if: steps.cache.outputs.cache-hit != 'true' && ${{ hashFiles('renv.lock') == '' }}
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
