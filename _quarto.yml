@@ -62,7 +62,7 @@ format:
   html:
     theme: 
       - cosmo
-      - custom.scss
+      - lmu-osc-custom.scss
     css: styles.css
     toc: true
     fontsize: 13pt
