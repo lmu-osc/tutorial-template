@@ -11,7 +11,7 @@ author:
   - name: AUTHOR 1
     affiliation: "LMU Open Science Center, OTHER AFFILIATIONS"
     orcid: 0000-0000-0000-0000
-  - name: Florian Pargent
+  - name: AUTHOR 2
     affiliation: "LMU Open Science Center, OTHER AFFILIATIONS"
     orcid: 0000-0000-0000-0000
 # google-scholar: true
