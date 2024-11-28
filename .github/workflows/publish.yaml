@@ -8,7 +8,7 @@ on:
 name: Quarto Publish
 
 jobs:
-  build-deploy-renv:
+  quarto-publish:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -18,31 +18,31 @@ jobs:
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        
+
       - name: Install R with renv
-        if: ${{ hashFiles('renv.lock') != ''}}
         uses: r-lib/actions/setup-r@v2
         with:
           r-version: renv
+        if: ${{ hashFiles('renv.lock') != '' }}
 
       - name: Install R Dependencies with renv
-        if: ${{ hashFiles('renv.lock') != ''}}
         uses: r-lib/actions/setup-renv@v2
         with:
           cache-version: 1
+        if: ${{ hashFiles('renv.lock') != '' }}
 
       - name: Install R latest
-        if: ${{ hashFiles('renv.lock') == ''}}
         uses: r-lib/actions/setup-r@v2
+        if: ${{ hashFiles('renv.lock') == '' }}
 
       - name: Install R latest dependencies
-        if: ${{ hashFiles('renv.lock') == ''}}
         run: |
           install.packages("renv")
           install.packages("rmarkdown")
           install.packages("yaml")
           install.packages(renv::dependencies()$Package)
         shell: Rscript {0}
+        if: ${{ hashFiles('renv.lock') == '' }}
 
       - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
