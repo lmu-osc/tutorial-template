@@ -41,7 +41,7 @@ jobs:
           install.packages("renv")
           install.packages("rmarkdown")
           install.packages("yaml")
-          install.packages(renv::dependencies()$Packages)
+          install.packages(renv::dependencies()$Package)
         shell: Rscript {0}
 
       - name: Render and Publish
