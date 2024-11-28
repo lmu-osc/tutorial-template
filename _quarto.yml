@@ -1,5 +1,7 @@
 project:
   type: website
+  pre-render: wget -nc https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-custom.scss
+  post-render: rm lmu-osc-custom.scss
   
 
 website:
@@ -61,8 +63,9 @@ format:
   html:
     theme: 
       - cosmo
-      - custom.scss
-    css: styles.css
+      - lmu-osc-custom.scss
+    css: 
+      - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-styles.css
     toc: true
     fontsize: 13pt
     code-overflow: wrap
