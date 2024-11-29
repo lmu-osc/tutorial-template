@@ -1,8 +1,9 @@
 on:
-  push:
-      paths:
-      - CITATION.cff
   workflow_dispatch:
+  push:
+    branches: main
+    paths:
+    - CITATION.cff
 
 name: CITATION.cff
 jobs:
