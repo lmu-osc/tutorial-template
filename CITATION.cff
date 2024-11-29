@@ -14,3 +14,4 @@ version: GITHUB RELEASE VERSION
 date-released: "YYYY-MM-DD"
 doi: "DOI HERE--EX: 10.5281/zenodo.14230879"
 url: "DEPLOYED WEBSITE URL HERE"
+license: CC-BY-SA-4.0
