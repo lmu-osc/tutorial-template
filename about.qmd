@@ -5,7 +5,7 @@ citation:
   type: "webpage"
   title: "TITLE HERE"
   container-title: "LMU Open Science Center"
-  url: https://lmu-osc.github.io/introduction-to-renv
+  url: https://lmu-osc.github.io/
   doi: "DOI HERE"
 author:
   - name: AUTHOR 1
