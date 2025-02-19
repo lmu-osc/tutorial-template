@@ -1,9 +1,12 @@
+# Begin Project
 project:
   type: website
   pre-render: wget -nc https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-custom.scss
   post-render: rm lmu-osc-custom.scss
-  
+# End Project
 
+
+# Begin Website
 website:
   title: "TUTORIAL TITLE HERE"
   page-footer: 
@@ -56,9 +59,10 @@ website:
             text: "TOPIC2 Page2 Title"
           - href: TOPIC2/page3.qmd
             text: "TOPIC2 Page3 Title"
+# End Website
 
 
-
+# Begin Format
 format:
   html:
     theme: 
@@ -73,5 +77,8 @@ format:
       sidebar-width: 300px
     include-in-header:
       - file: matomo-analytics.html
+# End Format
 
+# Begin Editor
 editor: source
+# End Editor
