@@ -4,9 +4,17 @@ authors:
 - family-names: "YOUR_NAME_HERE"
   given-names: "YOUR_NAME_HERE"
   orcid: "https://orcid.org/0000-0000-0000-0000"
+  affiliation:
+    - name: LMU Open Science Center
+      ror: https://ror.org/029e6qe04
 - family-names: "Lisa"
   given-names: "Mona"
   orcid: "https://orcid.org/0000-0000-0000-0000"
+  affiliation:
+    - name: LMU Open Science Center
+      ror: https://ror.org/029e6qe04
+- name: LMU Open Science Center
+  ror: https://ror.org/029e6qe04
 title: ""
 version: 0.0.1
 doi: 
