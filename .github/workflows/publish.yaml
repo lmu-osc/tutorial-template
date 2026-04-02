@@ -56,12 +56,24 @@ jobs:
         uses: r-lib/actions/setup-r@v2
         if: ${{ hashFiles('renv.lock') == '' }}
 
+      - name: Cache R library (no lockfile)
+        uses: actions/cache@v4
+        with:
+          path: ~/.local/lib/R/site-library
+          key: ${{ runner.os }}-r-nolock-${{ hashFiles('**/*.R', '**/*.Rmd', '**/*.qmd', '_quarto.yml') }}
+          restore-keys: |
+            ${{ runner.os }}-r-nolock-
+        if: ${{ hashFiles('renv.lock') == '' }}
+
       - name: Install R latest dependencies
         run: |
+          dir.create("~/.local/lib/R/site-library", recursive = TRUE, showWarnings = FALSE)
+          .libPaths(c("~/.local/lib/R/site-library", .libPaths()))
           install.packages("renv")
           install.packages("rmarkdown")
           install.packages("yaml")
-          install.packages(renv::dependencies()$Package)
+          deps <- unique(stats::na.omit(renv::dependencies()$Package))
+          if (length(deps) > 0) install.packages(deps)
         shell: Rscript {0}
         if: ${{ hashFiles('renv.lock') == '' }}
 
