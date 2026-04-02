@@ -26,5 +26,5 @@ This tutorial assumes you have the following software installed:
 ```{r}
 # This is an example code chunk. You can delete this and add your own code chunks as
 # needed.
-    summary(cars)
+summary(cars)
 ```
