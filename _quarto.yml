@@ -73,6 +73,7 @@ format:
     toc: true
     fontsize: 13pt
     code-overflow: wrap
+    code-link: true
     grid:
       sidebar-width: 300px
     include-in-header:
