@@ -21,3 +21,10 @@ This tutorial assumes you have the following software installed:
 -   SOME SOFTWARE + LINK HERE
 
 :::
+
+
+```{r}
+# This is an example code chunk. You can delete this and add your own code chunks as
+# needed.
+    summary(cars)
+```
