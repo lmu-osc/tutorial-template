@@ -24,12 +24,21 @@ jobs:
           sudo apt-get update
           sudo apt install -y \
             libcurl4-openssl-dev \
+            libfontconfig1-dev \
             libssl-dev \
             libxml2-dev \
-            libfontconfig1-dev \
+            libpng-dev \
+            libjpeg-dev \
+            libtiff-dev \
+            libcairo2-dev \
+            libxt-dev \
+            libfreetype6-dev \
             libharfbuzz-dev \
             libfribidi-dev \
-            libcairo2-dev
+            zlib1g-dev \
+            libv8-dev \
+            libglpk-dev \
+            librsvg2-bin
 
       - name: Install R with renv
         uses: r-lib/actions/setup-r@v2
