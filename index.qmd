@@ -21,3 +21,13 @@ This tutorial assumes you have the following software installed:
 -   SOME SOFTWARE + LINK HERE
 
 :::
+
+
+::: {.callout-note title="Support Our Work"}
+
+If you find this tutorial helpful, please consider supporting our work by starring 🌟 the repository on GitHub!
+
+
+[Check out the repo here!]({{< meta repo-url >}})
+
+:::
