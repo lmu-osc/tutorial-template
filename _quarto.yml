@@ -10,7 +10,6 @@ project:
 website:
   title: "TUTORIAL TITLE HERE"
   page-footer: 
-    center: "Copyright, 2024 Open Science Center at LMU Munich"
     border: false
   search:
     location: sidebar
