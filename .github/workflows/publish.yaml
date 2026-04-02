@@ -19,6 +19,18 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt install -y \
+            libcurl4-openssl-dev \
+            libssl-dev \
+            libxml2-dev \
+            libfontconfig1-dev \
+            libharfbuzz-dev \
+            libfribidi-dev \
+            libcairo2-dev
+
       - name: Install R with renv
         uses: r-lib/actions/setup-r@v2
         with:
@@ -35,13 +47,12 @@ jobs:
         uses: r-lib/actions/setup-r@v2
         if: ${{ hashFiles('renv.lock') == '' }}
 
-      - name: Install R latest dependencies with pak
+      - name: Install R latest dependencies
         run: |
-          install.packages("pak")
           install.packages("renv")
-          deps <- unique(stats::na.omit(renv::dependencies()$Package))
-          pkgs <- unique(c("rmarkdown", "yaml", deps))
-          pak::pkg_install(pkgs, dependencies = TRUE)
+          install.packages("rmarkdown")
+          install.packages("yaml")
+          install.packages(renv::dependencies()$Package)
         shell: Rscript {0}
         if: ${{ hashFiles('renv.lock') == '' }}
 
