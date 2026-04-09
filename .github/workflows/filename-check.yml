@@ -1,0 +1,36 @@
+name: Check File Naming and Path Rules
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_depth:
+        description: Maximum allowed file depth (path segments)
+        required: false
+        default: "3"
+      max_path_length:
+        description: Maximum allowed file path length
+        required: false
+        default: "65"
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+env:
+  MAX_DEPTH: ${{ github.event.inputs.max_depth || '3' }}
+  MAX_PATH_LENGTH: ${{ github.event.inputs.max_path_length || '65' }}
+
+jobs:
+  filename-path-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Run checks
+        run: python3 scripts/check_qmd_paths.py

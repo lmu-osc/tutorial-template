@@ -1,0 +1,6 @@
+# Paths to ignore for filename/path validation checks.
+# Patterns use fnmatch syntax and are relative to repo root.
+
+_site/**
+.quarto/**
+.github/**
