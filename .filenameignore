@@ -4,3 +4,12 @@
 _site/**
 .quarto/**
 .github/**
+
+
+# Common documentation files to ignore
+LICENSE-CODE.md
+LICENSE.md
+LICENSE
+README.md
+README
+CITATION
