@@ -43,19 +43,21 @@ website:
       - text: "Overview"
         href: index.qmd
       - section: "TOPIC 1"
+        href: topic-one/index.qmd
         contents:
-          - href: TOPIC1/page1.qmd
-            text: "TOPIC1 Page1 Title"
-          - href: TOPIC1/page2.qmd
-            text: "TOPIC1 Page2 Title"
+          - href: topic-one/page-one.qmd
+            text: Example of Overriden Title # You can override the page title here if you want to, otherwise it will use the page title from the qmd file
+          - href: topic-one/page-two.qmd
+            # text: "topic-one Page 2 Title"
       - section: "TOPIC 2"
+        href: topic-two/index.qmd
         contents:
-          - href: TOPIC2/page1.qmd
-            text: "TOPIC2 Page1 Title"
-          - href: TOPIC2/page2.qmd
-            text: "TOPIC2 Page2 Title"
-          - href: TOPIC2/page3.qmd
-            text: "TOPIC2 Page3 Title"
+          - href: topic-two/page-one.qmd
+            # text: "topic-two Page 1 Title"
+          - href: topic-two/page-two.qmd
+            # text: "topic-two Page 2 Title"
+          - href: topic-two/page-three.qmd
+            # text: "topic-two Page 3 Title"
 # End Website
 
 
