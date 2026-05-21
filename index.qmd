@@ -11,8 +11,9 @@ This **self-paced tutorial** is intended to take X hours to complete.
 
 The tutorial is split into the following sections:
 
-1.  [**TOPIC1**]() talks about TOPIC1
-2.  [**TOPIC2**]() discusses TOPIC2
+1.  [**topic-one**]() talks about the first topic
+2.  [**topic-two**]() discusses the second topic
+3. ...etc
 
 
 ::: {.callout-tip title="Recommended Software"}
