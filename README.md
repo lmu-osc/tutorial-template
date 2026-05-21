@@ -98,6 +98,16 @@ After this initial set-up, changes you make to the Quarto files and push to GitH
 
 - Open a GitHub issue in your repository describing the change you want and someone from OSC or your team can help. If you prefer direct assistance, share which file you want edited and what text should be added or replaced.
 
+### Running Actions (for non-technical contributors)
+
+This template has several automations in place to help ensure consistency across our repositories, namely a citation file checker, a filename checker, and an automation for publishing the site. You can see details at `.github/workflows/README.md` if interested, but it's not required to know these details by any means.
+
+- If you need to run a repository workflow (for example to re-render the site), open this repository on GitHub and click the **Actions** tab.
+- Select the workflow you want (examples: "Render Quarto Site", "Check CITATION.cff", "Filename Checks").
+- Click **Run workflow**, and then select the branch you want to test a workflow on from the "Branch:" dropdown. Then click **Run workflow** again to start it.
+- After the workflow starts, you can monitor progress on the same page and inspect step logs if something fails. If you are unsure what to do after a failure, open a GitHub issue and paste the error or screenshot.
+- If you do not see the **Run workflow** button, you can still make changes by editing files and pushing them to GitHub; the workflows that trigger on `push` will run automatically.
+
 ## Conventions and tips
 
 - File names: lowercase and kebab-case (e.g. `my-topic/my-page.qmd`).
