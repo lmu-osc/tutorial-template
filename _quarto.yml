@@ -9,6 +9,7 @@ website:
   title: "TUTORIAL TITLE HERE"
   page-footer: 
     border: false
+    center: © YYYY Max Mustermann, Erika Musterfrau. Published by LMU Open Science Center. Licensed under CC BY-SA 4.0.
   search:
     location: sidebar
   repo-url: https://github.com/lmu-osc/REPO-NAME-HERE
