@@ -16,13 +16,16 @@ Top-level files and directories you'll commonly interact with:
 - `about.qmd` — An example about page for your tutorial. It's main role is to contain License, Citation, and Contributor information.
 - `CITATION.cff` — Citation metadata for your project (authors, affiliations, ORCID, etc.). See the official  [CITATION.cff](https://citation-file-format.github.io/) documentation or sent an OSC member a message if it's unclear how to fill this in.
 - `LICENSE.md` and `LICENSE-CODE.md` — License text for content and code respectively. We use CC-BY-SA 4.0 and CC0 1.0 Universal for authored content and code, respectively.
-- `lmu-osc-custom.scss` — Site-specific CSS tweaks; add branding or small visual changes here.
+- `lmu-osc-custom.scss` — Site-specific SCSS tweaks; add branding or small visual changes here.
+- `styles.css` — Additional CSS classes for page content (e.g., `.center`, `.img-border`, `.output-overflow`). Edit this file for content-level styling.
 - `matomo-analytics.html` — Analytics snippet (managed by OSC staff; do not edit unless instructed).
 - `assets/` — Images, downloads, and other static files used by the site.
 - `topic-one/`, `topic-two/`, ... — Example topic folders containing `.qmd` pages for tutorial sections. Replace or rename these to match your content.
 - `_site/` — Generated site files (output). You normally do not edit this folder directly — it's produced when you build the site.
+- `.filenameignore` — Patterns ignored by the automated filename check workflow. Add paths here if the workflow flags files that should be skipped.
+- `.gitignore` — Files and directories Git should ignore (e.g., history files, temporary R output). Edit if your project generates new temporary files.
 
-If you want to change what appears in the site's navigation, edit the `navigation:` section in `_quarto.yml`.
+If you want to change what appears in the site's navigation, edit the `sidebar:` and `navbar:` sections in `_quarto.yml`.
 
 ## Adapt this template (practical, plain-language steps)
 
@@ -34,7 +37,7 @@ These instructions are written for less-technical users. You can do most work th
 
 2) Update basic site information
 
-- Open `_quarto.yml` and change the `title:` to your tutorial name. You can edit this file in GitHub's web editor or your local editor.
+- Open `_quarto.yml` and change the `title:` to your tutorial name. Also update `repo-url:` and the GitHub URLs under `navbar > tools` to point to your repository. You can edit this file in GitHub's web editor or your local editor.
 
 3) Edit the homepage and about page
 
@@ -61,7 +64,7 @@ Your content here.
 
 6) Make small style changes
 
-- Use `lmu-osc-custom.scss` for simple visual tweaks (colors, font sizes). For most users, this is optional — only edit if you know basic CSS or want help from a web-savvy colleague.
+- Use `lmu-osc-custom.scss` for site-wide visual tweaks (colors, fonts, layout). Add content-level CSS classes to `styles.css` for page-specific styling (e.g., centering images, adding borders). For most users, this is optional — only edit if you know basic CSS or want help from a web-savvy colleague.
 
 7) Update project metadata and licensing
 
@@ -100,10 +103,10 @@ After this initial set-up, changes you make to the Quarto files and push to GitH
 
 ### Running Actions (for non-technical contributors)
 
-This template has several automations in place to help ensure consistency across our repositories, namely a citation file checker, a filename checker, and an automation for publishing the site. You can see details at `.github/workflows/README.md` if interested, but it's not required to know these details by any means.
+This template has several automations in place to help ensure consistency across our repositories, namely a citation file checker, a filename checker, an automation for publishing the site, and a code style formatter. You can see details at `.github/workflows/README.md` if interested, but it's not required to know these details by any means.
 
 - If you need to run a repository workflow (for example to re-render the site), open this repository on GitHub and click the **Actions** tab.
-- Select the workflow you want (examples: "Render Quarto Site", "Check CITATION.cff", "Filename Checks").
+- Select the workflow you want (examples: "Render Quarto Site", "Check CITATION.cff", "Filename Checks", "Tidyverse Style Formatting").
 - Click **Run workflow**, and then select the branch you want to test a workflow on from the "Branch:" dropdown. Then click **Run workflow** again to start it.
 - After the workflow starts, you can monitor progress on the same page and inspect step logs if something fails. If you are unsure what to do after a failure, open a GitHub issue and paste the error or screenshot.
 - If you do not see the **Run workflow** button, you can still make changes by editing files and pushing them to GitHub; the workflows that trigger on `push` will run automatically.
