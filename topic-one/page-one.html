@@ -231,20 +231,13 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#level-one-header" id="toc-level-one-header" class="nav-link active" data-scroll-target="#level-one-header">Level One Header</a>
-  <ul class="collapse">
-  <li><a href="#level-two" id="toc-level-two" class="nav-link" data-scroll-target="#level-two">Level Two</a>
+  <li><a href="#level-two" id="toc-level-two" class="nav-link active" data-scroll-target="#level-two">Level Two</a>
   <ul class="collapse">
   <li><a href="#l3" id="toc-l3" class="nav-link" data-scroll-target="#l3">L3</a></li>
   <li><a href="#l3-again" id="toc-l3-again" class="nav-link" data-scroll-target="#l3-again">L3 Again</a></li>
   <li><a href="#and-one-more-time" id="toc-and-one-more-time" class="nav-link" data-scroll-target="#and-one-more-time">And one more time</a></li>
   </ul></li>
   <li><a href="#another-level-two" id="toc-another-level-two" class="nav-link" data-scroll-target="#another-level-two">Another Level Two</a></li>
-  </ul></li>
-  <li><a href="#level-one-again" id="toc-level-one-again" class="nav-link" data-scroll-target="#level-one-again">Level One Again</a>
-  <ul class="collapse">
-  <li><a href="#level-two-1" id="toc-level-two-1" class="nav-link" data-scroll-target="#level-two-1">Level Two</a></li>
-  </ul></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/lmu-osc/REPO-NAME-HERE/edit/main/topic-one/page-one.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/lmu-osc/REPO-NAME-HERE/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -271,8 +264,9 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 
 
 <p>The headers below cause the table of contents/dropdown on the right to be visible.</p>
-<section id="level-one-header" class="level1">
-<h1>Level One Header</h1>
+<p>Notice that we do not start with an H1 i.e.&nbsp;<code>#</code> header. This is because the title of the page is already an H1 header, so we start with H2 headers for the content.</p>
+<p>Quarto specifically discourages the use of multiple H1 headers on a page.</p>
+<p>https://github.com/quarto-dev/quarto-cli/issues/3891</p>
 <section id="level-two" class="level2">
 <h2 class="anchored" data-anchor-id="level-two">Level Two</h2>
 <section id="l3" class="level3">
@@ -287,15 +281,8 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 </section>
 <section id="another-level-two" class="level2">
 <h2 class="anchored" data-anchor-id="another-level-two">Another Level Two</h2>
-</section>
-</section>
-<section id="level-one-again" class="level1">
-<h1>Level One Again</h1>
-<section id="level-two-1" class="level2">
-<h2 class="anchored" data-anchor-id="level-two-1">Level Two</h2>
 
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->

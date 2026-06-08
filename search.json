@@ -4,7 +4,7 @@
     "href": "topic-two/page-three.html",
     "title": "Page Title Here",
     "section": "",
-    "text": "The headers below cause the table of contents/dropdown on the right to be visible.",
+    "text": "The headers below cause the table of contents/dropdown on the right to be visible.\nNotice that we do not start with an H1 i.e. # header. This is because the title of the page is already an H1 header, so we start with H2 headers for the content.\nQuarto specifically discourages the use of multiple H1 headers on a page.\nhttps://github.com/quarto-dev/quarto-cli/issues/3891",
     "crumbs": [
       "Home",
       "TOPIC 2",
@@ -29,18 +29,6 @@
     "title": "Page Title Here",
     "section": "Another Level Two",
     "text": "Another Level Two",
-    "crumbs": [
-      "Home",
-      "TOPIC 2",
-      "Page Title Here"
-    ]
-  },
-  {
-    "objectID": "topic-two/page-three.html#level-two-1",
-    "href": "topic-two/page-three.html#level-two-1",
-    "title": "Page Title Here",
-    "section": "Level Two",
-    "text": "Level Two",
     "crumbs": [
       "Home",
       "TOPIC 2",
@@ -81,7 +69,18 @@
     "href": "index.html",
     "title": "Welcome to the TOPIC Tutorial!",
     "section": "",
-    "text": "THIS IS YOUR HOME PAGE FILE. DO NOT RENAME OR DELETE THIS FILE.\n\nTutorial Overview\nThis self-paced tutorial is intended to take X hours to complete.\nThe tutorial is split into the following sections:\n\ntopic-one talks about the first topic\ntopic-two discusses the second topic\n…etc\n\n\n\n\n\n\n\nTipRecommended Software\n\n\n\nThis tutorial assumes you have the following software installed:\n\nSOME SOFTWARE + LINK HERE\n\n\n\n\n# This is an example code chunk. You can delete this and add your own code chunks as\n# needed.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00  \n\n\n\n\n\n\n Back to top",
+    "text": "THIS IS YOUR HOME PAGE FILE. DO NOT RENAME OR DELETE THIS FILE.",
+    "crumbs": [
+      "Home",
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#tutorial-overview",
+    "href": "index.html#tutorial-overview",
+    "title": "Welcome to the TOPIC Tutorial!",
+    "section": "Tutorial Overview",
+    "text": "Tutorial Overview\nThis self-paced tutorial is intended to take X hours to complete.\nThe tutorial is split into the following sections:\n\ntopic-one talks about the first topic\ntopic-two discusses the second topic\n…etc\n\n\n\n\n\n\n\nTipRecommended Software\n\n\n\nThis tutorial assumes you have the following software installed:\n\nSOME SOFTWARE + LINK HERE\n\n\n\n\n# This is an example code chunk. You can delete this and add your own code chunks as\n# needed.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00",
     "crumbs": [
       "Home",
       "Overview"
@@ -92,7 +91,28 @@
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Contributors\nThis site was authored by AUTHORS, and edits/contributions were made by EDITORS/AUTHORS.\n\n\nLicenses\nThe overall project is available under the CC BY-SA 4.0 license found at LICENSE; all code without any narrative text is also (at your option) available under the CC0 1.0 Universal license found at LICENSE-CODE.\nWhy two licenses? The CC BY-SA 4.0 license is for the content of the website, while the CC0 1.0 Universal license is for the code and configuration files. This is a common practice for websites that include code snippets and other content that may be reused in other projects, particularly because the CC BY-SA 4.0 license is not intended to be used with software.\n\n\nNotes\nThis tutorial was primarily written in YYYY using SOFTWARE-NAME SOFTWARE-VERSION. Major changes to the SOFTWARE-NAME can be found at the package’s website for the most up-to-date information, and to confirm that our tutorial is not out-of-date.\n\n\n\n\n Back to topCitationBibTeX citation:@online{1,\n  author = {1, AUTHOR},\n  title = {TITLE {HERE}},\n  date = {},\n  url = {https://lmu-osc.github.io/},\n  doi = {DOI HERE},\n  langid = {en}\n}\nFor attribution, please cite this work as:\n1, AUTHOR. “TITLE HERE.” LMU Open Science Center. https://doi.org/DOI HERE."
+    "text": "This site was authored by AUTHORS, and edits/contributions were made by EDITORS/AUTHORS."
+  },
+  {
+    "objectID": "about.html#contributors",
+    "href": "about.html#contributors",
+    "title": "About",
+    "section": "",
+    "text": "This site was authored by AUTHORS, and edits/contributions were made by EDITORS/AUTHORS."
+  },
+  {
+    "objectID": "about.html#licenses",
+    "href": "about.html#licenses",
+    "title": "About",
+    "section": "Licenses",
+    "text": "Licenses\nThe overall project is available under the CC BY-SA 4.0 license found at LICENSE; all code without any narrative text is also (at your option) available under the CC0 1.0 Universal license found at LICENSE-CODE.\nWhy two licenses? The CC BY-SA 4.0 license is for the content of the website, while the CC0 1.0 Universal license is for the code and configuration files. This is a common practice for websites that include code snippets and other content that may be reused in other projects, particularly because the CC BY-SA 4.0 license is not intended to be used with software."
+  },
+  {
+    "objectID": "about.html#notes",
+    "href": "about.html#notes",
+    "title": "About",
+    "section": "Notes",
+    "text": "Notes\nThis tutorial was primarily written in YYYY using SOFTWARE-NAME SOFTWARE-VERSION. Major changes to the SOFTWARE-NAME can be found at the package’s website for the most up-to-date information, and to confirm that our tutorial is not out-of-date."
   },
   {
     "objectID": "LICENSE.html",
@@ -113,7 +133,7 @@
     "href": "topic-one/page-two.html",
     "title": "Page Title Here",
     "section": "",
-    "text": "The headers below cause the table of contents/dropdown on the right to be visible.",
+    "text": "The headers below cause the table of contents/dropdown on the right to be visible.\nNotice that we do not start with an H1 i.e. # header. This is because the title of the page is already an H1 header, so we start with H2 headers for the content.\nQuarto specifically discourages the use of multiple H1 headers on a page.\nhttps://github.com/quarto-dev/quarto-cli/issues/3891",
     "crumbs": [
       "Home",
       "TOPIC 1",
@@ -145,23 +165,11 @@
     ]
   },
   {
-    "objectID": "topic-one/page-two.html#level-two-1",
-    "href": "topic-one/page-two.html#level-two-1",
-    "title": "Page Title Here",
-    "section": "Level Two",
-    "text": "Level Two",
-    "crumbs": [
-      "Home",
-      "TOPIC 1",
-      "Page Title Here"
-    ]
-  },
-  {
     "objectID": "topic-one/page-one.html",
     "href": "topic-one/page-one.html",
     "title": "Page Title Here",
     "section": "",
-    "text": "The headers below cause the table of contents/dropdown on the right to be visible.",
+    "text": "The headers below cause the table of contents/dropdown on the right to be visible.\nNotice that we do not start with an H1 i.e. # header. This is because the title of the page is already an H1 header, so we start with H2 headers for the content.\nQuarto specifically discourages the use of multiple H1 headers on a page.\nhttps://github.com/quarto-dev/quarto-cli/issues/3891",
     "crumbs": [
       "Home",
       "TOPIC 1",
@@ -193,23 +201,11 @@
     ]
   },
   {
-    "objectID": "topic-one/page-one.html#level-two-1",
-    "href": "topic-one/page-one.html#level-two-1",
-    "title": "Page Title Here",
-    "section": "Level Two",
-    "text": "Level Two",
-    "crumbs": [
-      "Home",
-      "TOPIC 1",
-      "Example of Overriden Title"
-    ]
-  },
-  {
     "objectID": "topic-two/page-two.html",
     "href": "topic-two/page-two.html",
     "title": "Page Title Here",
     "section": "",
-    "text": "The headers below cause the table of contents/dropdown on the right to be visible.",
+    "text": "The headers below cause the table of contents/dropdown on the right to be visible.\nNotice that we do not start with an H1 i.e. # header. This is because the title of the page is already an H1 header, so we start with H2 headers for the content.\nQuarto specifically discourages the use of multiple H1 headers on a page.\nhttps://github.com/quarto-dev/quarto-cli/issues/3891",
     "crumbs": [
       "Home",
       "TOPIC 2",
@@ -241,23 +237,11 @@
     ]
   },
   {
-    "objectID": "topic-two/page-two.html#level-two-1",
-    "href": "topic-two/page-two.html#level-two-1",
-    "title": "Page Title Here",
-    "section": "Level Two",
-    "text": "Level Two",
-    "crumbs": [
-      "Home",
-      "TOPIC 2",
-      "Page Title Here"
-    ]
-  },
-  {
     "objectID": "topic-two/page-one.html",
     "href": "topic-two/page-one.html",
     "title": "Page Title Here",
     "section": "",
-    "text": "The headers below cause the table of contents/dropdown on the right to be visible.",
+    "text": "The headers below cause the table of contents/dropdown on the right to be visible.\nNotice that we do not start with an H1 i.e. # header. This is because the title of the page is already an H1 header, so we start with H2 headers for the content.\nQuarto specifically discourages the use of multiple H1 headers on a page.\nhttps://github.com/quarto-dev/quarto-cli/issues/3891",
     "crumbs": [
       "Home",
       "TOPIC 2",
@@ -282,18 +266,6 @@
     "title": "Page Title Here",
     "section": "Another Level Two",
     "text": "Another Level Two",
-    "crumbs": [
-      "Home",
-      "TOPIC 2",
-      "Page Title Here"
-    ]
-  },
-  {
-    "objectID": "topic-two/page-one.html#level-two-1",
-    "href": "topic-two/page-one.html#level-two-1",
-    "title": "Page Title Here",
-    "section": "Level Two",
-    "text": "Level Two",
     "crumbs": [
       "Home",
       "TOPIC 2",
