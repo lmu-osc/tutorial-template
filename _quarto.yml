@@ -69,7 +69,9 @@ format:
       - cosmo
       - lmu-osc-custom.scss
     css: 
+      - assets/bootstrap-grid.min.css
       - https://raw.githubusercontent.com/lmu-osc/branding-resources/refs/heads/main/lmu-osc-styles.css
+      - footer/footer-style.css
     toc: true
     fontsize: 13pt
     code-overflow: wrap
@@ -78,6 +80,8 @@ format:
       sidebar-width: 300px
     include-in-header:
       - file: matomo-analytics.html
+    include-after-body:
+      - file: footer/footer.html
 # End Format
 
 # Begin Editor
