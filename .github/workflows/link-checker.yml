@@ -1,0 +1,16 @@
+name: Filename Checks
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  check-names:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: filiph/linkcheck@3.0.0
+        with:
+            arguments: https://lmu-osc.github.io/tutorial-template/
