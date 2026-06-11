@@ -1,4 +1,4 @@
-name: Filename Checks
+name: Link Checker
 
 on:
   workflow_dispatch:
@@ -8,7 +8,7 @@ on:
       - main
 
 jobs:
-  check-names:
+  check-links:
     runs-on: ubuntu-latest
     steps:
       - uses: filiph/linkcheck@3.0.0
