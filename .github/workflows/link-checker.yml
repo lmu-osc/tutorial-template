@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Check links
         id: check
-        uses: filiph/linkcheck@3.0.0
+        uses: filiph/linkcheck@master
         continue-on-error: true
         with:
           arguments: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
