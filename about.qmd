@@ -38,5 +38,5 @@ Why two licenses? The CC BY-SA 4.0 license is for the content of the website, wh
 
 ## Notes
 
-This tutorial was primarily written in YYYY using SOFTWARE-NAME SOFTWARE-VERSION. Major changes to the SOFTWARE-NAME can be found at the [package's website](SOFTWARE-URL) for the most up-to-date information, and to confirm that our tutorial is not out-of-date. 
+This tutorial was primarily written in YYYY using SOFTWARE-NAME SOFTWARE-VERSION. Major changes to the SOFTWARE-NAME can be found at the website [insert site URL] for the most up-to-date information, and to confirm that our tutorial is not out-of-date. 
 
