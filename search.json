@@ -104,7 +104,7 @@
     "href": "about.html#notes",
     "title": "About",
     "section": "Notes",
-    "text": "Notes\nThis tutorial was primarily written in YYYY using SOFTWARE-NAME SOFTWARE-VERSION. Major changes to the SOFTWARE-NAME can be found at the package’s website for the most up-to-date information, and to confirm that our tutorial is not out-of-date."
+    "text": "Notes\nThis tutorial was primarily written in YYYY using SOFTWARE-NAME SOFTWARE-VERSION. Major changes to the SOFTWARE-NAME can be found at the website [insert site URL] for the most up-to-date information, and to confirm that our tutorial is not out-of-date."
   },
   {
     "objectID": "index.html",
