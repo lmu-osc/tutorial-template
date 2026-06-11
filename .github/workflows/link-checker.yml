@@ -24,7 +24,7 @@ jobs:
         with:
           script: |
             const fs = require('fs');
-            const report = fs.readFileSync('linkcheck-output.md', 'utf8');
+            const report = fs.readFileSync('log', 'utf8');
 
             const { data: issues } = await github.rest.issues.listForRepo({
               owner: context.repo.owner,
