@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://lmu-osc.github.io/tutorial-template/topic-two/page-three.html</loc>
-    <lastmod>2026-06-11T09:19:23.784Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/tutorial-template/LICENSE-CODE.html</loc>
-    <lastmod>2026-06-11T09:19:23.783Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/tutorial-template/LICENSE.html</loc>
-    <lastmod>2026-06-11T09:19:23.783Z</lastmod>
+    <loc>https://lmu-osc.github.io/tutorial-template/index.html</loc>
+    <lastmod>2026-06-11T09:22:06.499Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/tutorial-template/about.html</loc>
-    <lastmod>2026-06-11T09:19:23.783Z</lastmod>
+    <lastmod>2026-06-11T09:22:06.498Z</lastmod>
   </url>
   <url>
-    <loc>https://lmu-osc.github.io/tutorial-template/index.html</loc>
-    <lastmod>2026-06-11T09:19:23.783Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/tutorial-template/topic-one/page-two.html</loc>
-    <lastmod>2026-06-11T09:19:23.784Z</lastmod>
+    <loc>https://lmu-osc.github.io/tutorial-template/LICENSE.html</loc>
+    <lastmod>2026-06-11T09:22:06.498Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/tutorial-template/topic-one/page-one.html</loc>
-    <lastmod>2026-06-11T09:19:23.784Z</lastmod>
+    <lastmod>2026-06-11T09:22:06.500Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/tutorial-template/topic-two/page-three.html</loc>
+    <lastmod>2026-06-11T09:22:06.500Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/tutorial-template/topic-two/page-two.html</loc>
-    <lastmod>2026-06-11T09:19:23.784Z</lastmod>
+    <lastmod>2026-06-11T09:22:06.500Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/tutorial-template/topic-two/page-one.html</loc>
-    <lastmod>2026-06-11T09:19:23.784Z</lastmod>
+    <lastmod>2026-06-11T09:22:06.500Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/tutorial-template/topic-one/page-two.html</loc>
+    <lastmod>2026-06-11T09:22:06.500Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/tutorial-template/LICENSE-CODE.html</loc>
+    <lastmod>2026-06-11T09:22:06.498Z</lastmod>
   </url>
 </urlset>
