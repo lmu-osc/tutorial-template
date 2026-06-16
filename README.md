@@ -2,10 +2,34 @@
 
 This repository is a starter template for Quarto-based OSC tutorials. It provides a simple, accessible structure you can copy and adapt to publish a small course or tutorial website.
 
+## Primary Documentation
+
+This README only serves as a brief documentation page. Details of the repo and how to adapt it for other tutorials can be found at our publicly-available manual in the [Authoring Tutorials for the OSC](https://lmu-osc.github.io/manual/authoring-tutorials/) section.
+
 ## Quick overview
 
 - **Purpose:** A lightweight Quarto site template pre-configured for OSC (Open Science Center) tutorials.
 - **Who it's for:** educators and researchers who want an easy-to-edit website using Quarto; no deep web development experience required.
+
+
+### Quick Start!
+
+Assuming you are a member of the lmu-osc GitHub Organization, you will likely have the rights to create new repos in our org. In particular, you can create new repos from an existing template i.e. using the `tutorial-template` repo. Choose this option when creating your new repo, and follow these instructions:
+
+```bash
+git clone git@github.com:lmu-osc/YOUR-REPO.git
+cd YOUR-REPO
+quarto preview
+```
+
+Optional: get your website deployed right away (only works for public repos):
+
+```bash
+quarto publish gh-pages
+```
+
+This may take several minutes to run, but you can check the Actions tab within the repo to see progress. If you run into problems, however, feel free to contact an OSC staff member. Read our documentation on [Activating GitHub Pages](https://lmu-osc.github.io/manual/authoring-tutorials/finalization-and-publishing.html#activate-github-pages-one-time-setup).
+
 
 ## Structure Overview
 
@@ -27,81 +51,9 @@ Top-level files and directories you'll commonly interact with:
 
 If you want to change what appears in the site's navigation, edit the `sidebar:` and `navbar:` sections in `_quarto.yml`.
 
-## Adapt this template (practical, plain-language steps)
-
-These instructions are written for less-technical users. You can do most work through the GitHub website or a simple text editor. Developers may prefer the command line.
-
-1) Make a copy of this template
-
-- Use the GitHub "Use this template" button, or ask your organization to create a new repository from this template.
-
-2) Update basic site information
-
-- Open `_quarto.yml` and change the `title:` to your tutorial name. Also update `repo-url:` and the GitHub URLs under `navbar > tools` to point to your repository. You can edit this file in GitHub's web editor or your local editor.
-
-3) Edit the homepage and about page
-
-- Open `index.qmd` to change the welcome message and overview.
-- Open `about.qmd` to add contact info, acknowledgements, and contributor names.
-
-4) Rename or replace example topics and pages
-
-- Replace the example folders like `topic-one/` with folders that match your tutorial sections. Each folder contains `.qmd` files — these are the pages visitors will read.
-- The start of each section or new chapter should be the `index.qmd` file *within the relevant directory*. Other pages in the directory would be the chapters of the section. You can think of these index pages as landing pages for a broader category. If you don't need chapters within the section, however, then it is completely acceptable to just use the index page.
-- To add a new page: create a new `.qmd` file (for example `topic-three/page-one.qmd`) and include a title at the top of the file:
-
-```
----
-title: "My page title"
----
-
-Your content here.
-```
-
-5) Add images and files
-
-- Put images or downloadable files in `assets/` (for example `assets/images/logo.png`) and reference them in a page with `![](/assets/images/logo.png)`.
-
-6) Make small style changes
-
-- Use `lmu-osc-custom.scss` for site-wide visual tweaks (colors, fonts, layout). Add content-level CSS classes to `styles.css` for page-specific styling (e.g., centering images, adding borders). For most users, this is optional — only edit if you know basic CSS or want help from a web-savvy colleague.
-
-7) Update project metadata and licensing
-
-- Edit `CITATION.cff` with author names and affiliations so others can cite your tutorial. If you aren't sure what to put, ask collaborators for their preferred name and ORCID.
-- Confirm `LICENSE.md` and `LICENSE-CODE.md` reflect how you want to allow reuse of your content and code.
-
-8) Preview your site locally (optional, for people who want to test changes first)
-
-- Install Quarto: follow the instructions at https://quarto.org/docs/get-started/
-- From the project folder, run:
-
-```bash
-quarto preview
-```
-
-- This command opens a local preview in your browser showing how the site will look.
-
-9) Publish changes
-
-Background: we use GitHub Pages to host these repos as live websites, and we rely on an automated pipeline to render any and all of the Qmd, HTML, CSS, etc. files in this repo to the final website. This pipeline should be activated at the beginning of repo usage using this command:
-
-```bash
-quarto publish gh-pages
-```
-
-This may take several minutes to run, but you can check the Actions tab within the repo to see progress. If you run into problems, however, feel free to contact an OSC staff member.
-
-After this initial set-up, changes you make to the Quarto files and push to GitHub will automatically be reflected in the live website.
-
-(Note: if the repo is private, GitHub Pages cannot be activated.)
 
 
-10) Need help?
-
-- Open a GitHub issue in your repository describing the change you want and someone from OSC or your team can help. If you prefer direct assistance, share which file you want edited and what text should be added or replaced.
-
-### Running Actions (for non-technical contributors)
+## Running Actions (for non-technical contributors)
 
 This template has several automations in place to help ensure consistency across our repositories, namely a citation file checker, a filename checker, an automation for publishing the site, and a code style formatter. You can see details at `.github/workflows/README.md` if interested, but it's not required to know these details by any means.
 
@@ -117,20 +69,4 @@ This template has several automations in place to help ensure consistency across
 - Content: use plain text and simple Markdown/Quarto; avoid embedding complex web widgets unless needed.
 - Collaboration: edit content on GitHub using branches and pull requests so teammates can review changes.
 
-## Build And Preview (developer-friendly)
 
-Run this to preview the site locally:
-
-```bash
-quarto preview
-```
-
-## Validate `CITATION.cff`
-
-This repo includes a GitHub Action that validates `CITATION.cff` on push.
-You can also validate locally:
-
-```bash
-python3 -m pip install --user cffconvert
-docker run --rm -v "${PWD}:/app" citationcff/cffconvert --validate
-```
