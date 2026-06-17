@@ -3,8 +3,8 @@ project:
   type: website
 # End Project
 
-
 # Begin Website
+repo-url: https://github.com/lmu-osc/REPO-NAME-HERE # REPLACE WITH YOUR REPO URL
 website:
   title: "TUTORIAL TITLE HERE"
   page-footer: 
@@ -12,7 +12,7 @@ website:
     center: © YYYY Max Mustermann, Erika Musterfrau. Published by LMU Open Science Center. Licensed under CC BY-SA 4.0.
   search:
     location: sidebar
-  repo-url: https://github.com/lmu-osc/REPO-NAME-HERE
+  repo-url: "{{< meta repo-url >}}"
   repo-actions: [edit, issue]
   back-to-top-navigation: true
   page-navigation: true
@@ -31,9 +31,9 @@ website:
       - icon: github
         menu:
           - text: Source Code
-            url:  https://github.com/lmu-osc/REPO-NAME-HERE
+            url:  "{{< meta repo-url >}}"
           - text: Report a Bug
-            url:  https://github.com/lmu-osc/REPO-NAME-HERE/issues
+            url:  "{{< meta repo-url >}}/issues"
       - icon: house-heart
         url: https://www.osc.lmu.de/
    
