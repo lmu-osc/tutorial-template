@@ -27,5 +27,5 @@ This tutorial assumes you have the following software installed:
 
 ::: {.callout-tip title="Support the LMU Open Science Center!"}
 
-**Like this tutorial? Be sure to give the repository a star and [follow us on GitHub](https://github.com/lmu-osc)!**
+**Like this tutorial? Be sure to give [the repository]({{< meta repo-url >}}) a star and [follow us on GitHub](https://github.com/lmu-osc)!**
 :::

@@ -4,7 +4,7 @@ project:
 # End Project
 
 # Begin Website
-repo-url: https://github.com/lmu-osc/REPO-NAME-HERE
+repo-url: https://github.com/lmu-osc/REPO-NAME-HERE # REPLACE WITH YOUR REPO URL
 website:
   title: "TUTORIAL TITLE HERE"
   page-footer: 
