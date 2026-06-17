@@ -5,17 +5,18 @@ title: "Welcome to the TOPIC Tutorial!"
 THIS IS YOUR HOME PAGE FILE. DO NOT RENAME OR DELETE THIS FILE.
 
 
-# Tutorial Overview
+## Tutorial Overview
 
 This **self-paced tutorial** is intended to take X hours to complete.
 
 The tutorial is split into the following sections:
 
-1.  [**TOPIC1**]() talks about TOPIC1
-2.  [**TOPIC2**]() discusses TOPIC2
+1.  [**topic-one**]() talks about the first topic
+2.  [**topic-two**]() discusses the second topic
+3. ...etc
 
 
-::: {.callout-tip title="Recommended Software"}
+::: {.callout-warning title="Recommended Software"}
 This tutorial assumes you have the following software installed:
 
 -   SOME SOFTWARE + LINK HERE
@@ -23,11 +24,8 @@ This tutorial assumes you have the following software installed:
 :::
 
 
-::: {.callout-note title="Support Our Work"}
 
-If you find this tutorial helpful, please consider supporting our work by starring 🌟 the repository on GitHub!
+::: {.callout-tip title="Support the LMU Open Science Center!"}
 
-
-[Check out the repo here!]({{< meta repo-url >}})
-
+**Like this tutorial? Be sure to give the repository a star and [follow us on GitHub](https://github.com/lmu-osc)!**
 :::

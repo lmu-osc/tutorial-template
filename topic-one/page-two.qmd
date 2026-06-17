@@ -1,0 +1,23 @@
+---
+title: "Page Title Here"
+---
+
+
+The headers below cause the table of contents/dropdown on the right to be visible. 
+
+Notice that we do not start with an H1 i.e. `#` header. This is because the title of the page is already an H1 header, so we start with H2 headers for the content.
+
+Quarto specifically discourages the use of multiple H1 headers on a page.
+
+https://github.com/quarto-dev/quarto-cli/issues/3891
+
+
+## Level Two
+
+### L3
+
+### L3 Again
+
+### And one more time
+
+## Another Level Two
