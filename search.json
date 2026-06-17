@@ -15,7 +15,7 @@
     "href": "index.html#tutorial-overview",
     "title": "Welcome to the TOPIC Tutorial!",
     "section": "Tutorial Overview",
-    "text": "Tutorial Overview\nThis self-paced tutorial is intended to take X hours to complete.\nThe tutorial is split into the following sections:\n\ntopic-one talks about the first topic\ntopic-two discusses the second topic\n…etc\n\n\n\n\n\n\n\nTipRecommended Software\n\n\n\nThis tutorial assumes you have the following software installed:\n\nSOME SOFTWARE + LINK HERE\n\n\n\n\n# This is an example code chunk. You can delete this and add your own code chunks as\n# needed.\nsummary(cars)\n\n     speed           dist       \n Min.   : 4.0   Min.   :  2.00  \n 1st Qu.:12.0   1st Qu.: 26.00  \n Median :15.0   Median : 36.00  \n Mean   :15.4   Mean   : 42.98  \n 3rd Qu.:19.0   3rd Qu.: 56.00  \n Max.   :25.0   Max.   :120.00",
+    "text": "Tutorial Overview\nThis self-paced tutorial is intended to take X hours to complete.\nThe tutorial is split into the following sections:\n\ntopic-one talks about the first topic\ntopic-two discusses the second topic\n…etc\n\n\n\n\n\n\n\nWarningRecommended Software\n\n\n\nThis tutorial assumes you have the following software installed:\n\nSOME SOFTWARE + LINK HERE\n\n\n\n\n\n\n\n\n\nTipSupport the LMU Open Science Center!\n\n\n\nLike this tutorial? Be sure to give the repository a star and follow us on GitHub!",
     "crumbs": [
       "Home",
       "Overview"
