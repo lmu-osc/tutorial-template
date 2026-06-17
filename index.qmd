@@ -16,7 +16,7 @@ The tutorial is split into the following sections:
 3. ...etc
 
 
-::: {.callout-tip title="Recommended Software"}
+::: {.callout-warning title="Recommended Software"}
 This tutorial assumes you have the following software installed:
 
 -   SOME SOFTWARE + LINK HERE
@@ -24,8 +24,8 @@ This tutorial assumes you have the following software installed:
 :::
 
 
-```{r}
-# This is an example code chunk. You can delete this and add your own code chunks as
-# needed.
-summary(cars)
-```
+
+::: {.callout-tip title="Support the LMU Open Science Center!"}
+
+**Like this tutorial? Be sure to give the repository a star and [follow us on GitHub](https://github.com/lmu-osc)!**
+:::
