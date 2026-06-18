@@ -26,35 +26,19 @@ format:
     min-height: 800px;
 }
 
-
-
-.privacy-container p{
-    text-align: justify;
-    font-size: 1.1rem;
-    line-height: 1.85;
-    font-weight:500;
-    color: var(--text-light);
-}
-
-.privacy-container a,
-.privacy-container i{
-    color:var(--primary-color);
-}
-
 </style>
 
-:::{.privacy-container}
+
+For data collected by the LMU Open Science Center, [LMU's general privacy policy](https://www.lmu.de/en/footer/privacy-policy/index.html){target="_blank"} <i class="fa-solid fa-arrow-up-right-from-square"></i> applies.
+
+Additionally, this site is hosted on the webhosting service GitHub Pages ([https://docs.github.com/en/pages](https://docs.github.com/en/pages)) with it's own privacy policy available at [https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement).
 
 
-General data protection policy for the internet pages of Ludwig-Maximilians-Universität München (hereinafter “LMU”)
-
-[LMU's general privacy policy](https://www.lmu.de/en/footer/privacy-policy/index.html){target="_blank"} <i class="fa-solid fa-arrow-up-right-from-square"></i> applies.
 
 
-:::
+#### Matomo Tracking Opt-Out
 
-
-##### Matomo Tracking Opt-Out
+This opt-out is only for the Matomo web analytics tool in use directly the LMU Open Science Center website. It does not affect any other tracking or analytics tools that may be in use on this site, including those used by GitHub Pages.
 
 ```{=html}
 <div id="matomo-opt-out"></div>
