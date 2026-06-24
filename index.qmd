@@ -1,5 +1,7 @@
 ---
 title: "Welcome to the TOPIC Tutorial!"
+subtitle: A subtitle for your tutorial
+description: A brief description of your tutorial (if you want to include this). Google uses this description in search results, so make it informative and concise.
 ---
 
 THIS IS YOUR HOME PAGE FILE. DO NOT RENAME OR DELETE THIS FILE.
@@ -25,7 +27,27 @@ This tutorial assumes you have the following software installed:
 
 
 
+:::: {.columns}
+
+::: {.column width="47.5%"}
+
 ::: {.callout-tip title="Support the LMU Open Science Center!"}
 
 **Like this tutorial? Be sure to give [the repository]({{< meta repo-url >}}) a star and [follow us on GitHub](https://github.com/lmu-osc)!**
 :::
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="47.5%"}
+
+
+::: {.callout-tip title="Questions about this tutorial?"}
+**If you have questions for the author of this tutorial, please take a look at the [About](about.qmd) page.**
+:::
+
+:::
+
+::::
