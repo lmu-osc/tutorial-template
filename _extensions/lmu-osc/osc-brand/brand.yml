@@ -1,0 +1,65 @@
+# minimal brand.yml enabling dark mode
+# replace with your brand colors, logos, and typography!
+color:
+  palette:
+    lmu-green: "#00883A"
+    lmu-black: "#232323"
+    lmu-white: "#FFF"
+    lmu-darkgrey: "#626468"
+    lmu-darkgray: "#626468"
+    lmu-middlegrey: "#C0C1C3"
+    lmu-middlegray: "#C0C1C3"
+    lmu-lightgrey: "#E6E6E7"
+    lmu-lightgray: "#E6E6E7"
+    lmu-lichtgrau: "#F5F5F5"
+    lmu-blue: "#0F1987"
+    lmu-cyan: "#009FE3"
+    lmu-violet: "#8C4091"
+    lmu-red: "#D71919"
+    lmu-orange: "#F18700"
+  background:
+    light: lmu-white
+    dark: lmu-black
+  foreground:
+    light: lmu-black
+    dark: lmu-white
+  primary:
+    light: lmu-green
+    dark: lmu-green
+  secondary:
+    light: lmu-black
+    dark: lmu-middlegray
+  tertiary:
+    light: lmu-blue
+    dark: lmu-violet
+  success:
+    light: lmu-cyan
+    dark: lmu-cyan
+  info:
+    light: lmu-violet
+    dark: lmu-violet
+  warning:
+    light: lmu-orange
+    dark: lmu-orange
+  danger:
+    light: lmu-red
+    dark: lmu-red
+
+logo:
+  images:
+    icon:
+      path: lmu-osc-favicon.jpg
+      alt: "LMU Open Science Center open book icon"
+    default:
+      path: lmu-osc-logo.svg
+      alt: "LMU Open Science Center logo"
+    dark:
+      path: lmu-osc-logo-dark.svg
+      alt: "LMU Open Science Center logo"
+  small: icon
+  medium:
+    light: default
+    dark: dark
+  large:
+    light: default
+    dark: dark
