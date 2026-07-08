@@ -51,6 +51,11 @@ website:
             # text: "topic-two Page 3 Title"
 # End Website
 
+# Begin Includes
+include-in-header:
+  - file: matomo-analytics.html
+# End Includes
+
 # Begin Format
 # use only if needed. the default format for `tutorial-template` projects is tutorial-template-html+tutorial
 # we recommend just extending the definition below if you need to make format changes
