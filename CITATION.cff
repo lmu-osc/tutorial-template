@@ -9,6 +9,7 @@ authors:
 title: "OSC Tutorial Template: A Quarto Extension"
 abstract: "A template website for the LMU Open Science Center's tutorials designed and installable as a Quarto extension"
 version: 1.0.1
+doi: https://doi.org/10.5281/zenodo.21263721
 date-released: 2026-07-08
 repository-code: "https://github.com/lmu-osc/tutorial-template"
 url: "https://lmu-osc.github.io/tutorial-template/"
