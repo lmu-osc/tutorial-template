@@ -1,12 +1,13 @@
 ---
 title: LMU Open Science Center Tutorial Examples
-format: tutorial-template-html+base
+format: tutorial-template-html+tutorial
 ---
 
 
 ::: {.callout-important}
 
-There are essentially no differences between the `osc-brand-html` and `tutorial-template-html` templates, at least very few if any that you will notice on this page alone. The `tutorial-template-html` is just slightly more opinonated with some presets e.g. a pre-activated Table of Contents (TOC) and some code tools/overflow options.
+This page uses the `tutorial-template-html+tutorial` page format by default. You can also edit the page `yaml` to use `tutorial-template-html+base` which just exports the `osc-brand-html` format which is a simplified version. 
+
 
 :::
 

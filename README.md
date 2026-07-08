@@ -19,6 +19,7 @@ Assuming you are a member of the lmu-osc GitHub Organization, you will likely ha
 ```bash
 git clone git@github.com:lmu-osc/YOUR-REPO.git
 cd YOUR-REPO
+quarto add lmu-osc/osc-brand --embed tutorial-template --no-prompt # embeds the newest OSC branding extension into the template
 quarto preview
 ```
 
