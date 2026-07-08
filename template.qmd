@@ -1,0 +1,170 @@
+---
+title: LMU Open Science Center Tutorial Examples
+format: tutorial-template-html+base
+---
+
+
+::: {.callout-important}
+
+There are essentially no differences between the `osc-brand-html` and `tutorial-template-html` templates, at least very few if any that you will notice on this page alone. The `tutorial-template-html` is just slightly more opinonated with some presets e.g. a pre-activated Table of Contents (TOC) and some code tools/overflow options.
+
+:::
+
+## brand.yml extension
+
+This example shows a few Bootstrap components that inherit the palette defined in `brand.yml` as well as a customized SCSS file.
+
+### Color badges
+
+<span class="badge text-bg-primary">Primary</span>
+<span class="badge text-bg-secondary">Secondary</span>
+<span class="badge text-bg-success">Success</span>
+<span class="badge text-bg-info">Info</span>
+<span class="badge text-bg-warning">Warning</span>
+<span class="badge text-bg-danger">Danger</span>
+
+### Alerts
+
+::: {.alert .alert-primary}
+This is a primary alert using the brand's primary color.
+:::
+
+::: {.alert .alert-secondary}
+This is a secondary alert using the brand's secondary color.
+:::
+
+::: {.alert .alert-success}
+This is a success alert using the brand's success color.
+:::
+
+::: {.alert .alert-info}
+This is an info alert using the brand's info color.
+:::
+
+### Buttons
+
+<div class="d-flex flex-wrap gap-2">
+  <button type="button" class="btn btn-primary">Primary action</button>
+  <button type="button" class="btn btn-secondary">Secondary action</button>
+  <button type="button" class="btn btn-success">Success</button>
+  <button type="button" class="btn btn-info">Info</button>
+  <button type="button" class="btn btn-warning">Warning</button>
+  <button type="button" class="btn btn-danger">Danger</button>
+</div>
+
+### Progress
+
+<div class="progress my-3" role="progressbar" aria-label="Brand progress" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100" style="height: 1.25rem;">
+  <div class="progress-bar bg-primary" style="width: 68%">Primary 68%</div>
+</div>
+
+<div class="progress my-3" role="progressbar" aria-label="Secondary progress" aria-valuenow="42" aria-valuemin="0" aria-valuemax="100" style="height: 1.25rem;">
+  <div class="progress-bar bg-secondary" style="width: 42%">Secondary 42%</div>
+</div>
+
+<div class="progress my-3" role="progressbar" aria-label="Info progress" aria-valuenow="24" aria-valuemin="0" aria-valuemax="100" style="height: 1.25rem;">
+  <div class="progress-bar bg-info" style="width: 24%">Info 24%</div>
+</div>
+
+### Cards
+
+```{=html}
+<div class="row row-cols-1 row-cols-md-3 g-3">
+  <div class="col">
+    <div class="card border-primary h-100">
+      <div class="card-header text-bg-primary">Primary</div>
+      <div class="card-body">
+        <h5 class="card-title">Brand anchor</h5>
+        <p class="card-text">Use the primary color for the main action or strongest emphasis.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-secondary h-100">
+      <div class="card-header text-bg-secondary">Secondary</div>
+      <div class="card-body">
+        <h5 class="card-title">Supporting state</h5>
+        <p class="card-text">The secondary color is useful for quieter supporting UI and neutral emphasis.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-info h-100">
+      <div class="card-header text-bg-info">Info</div>
+      <div class="card-body">
+        <h5 class="card-title">Informational state</h5>
+        <p class="card-text">Use the info color for helpful notes, tips, and contextual guidance.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-danger h-100">
+      <div class="card-header text-bg-danger">Danger</div>
+      <div class="card-body">
+        <h5 class="card-title">Attention state</h5>
+        <p class="card-text">Reserve the danger color for destructive or error-related feedback.</p>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+### Inline code and links
+
+Here is some inline code: `def foo(x): return x`{.python} and `y`{.python} and `z`{.python}.
+
+Here is [a link](https://example.com).
+
+### Code block
+
+```{.r}
+# | echo: true
+fibonacci <- function(n) {
+  if (n <= 0) {
+    return(NULL)
+  } else if (n == 1) {
+    return(0)
+  } else if (n == 2) {
+    return(1)
+  } else {
+    return(fibonacci(n - 1) + fibonacci(n - 2))
+  }
+}
+```
+
+### Images
+
+Brand images can be accessed with the `{{</* brand logo NAME */>}}` shortcode. Available options include:
+
+* **Icon, default, dark**: these are the underlying image labels. However, shoull use the superset of these:
+* **Small, medium, large**: small maps to the icon (or favicon), and medium and large are currently set to use the General Logo (and to swap the colors accordingly with light/dark mode--this is the main motivator to use these labels instead of the other ones!)
+
+#### Favicon
+
+```markdown
+{{</* brand logo small */>}}
+```
+
+{{< brand logo small >}}
+
+#### General Logo
+
+##### Medium
+
+```markdown
+{{</* brand logo medium */>}}
+```
+
+{{< brand logo medium >}}
+
+Note that if you switch to dark mode, the "LMU Open Science Center" text switches to white. This functions not because the actual text color is changing, but because a different image is swapped in. That is, the the `medium` logo has a light mode and dark mode image defined.
+
+##### Large
+
+The large logo is essentially the same, but without a dark mode option available at this time.
+
+```markdown
+{{</* brand logo large */>}}
+```
+
+{{< brand logo large >}}
