@@ -4,7 +4,6 @@
 _site/**
 .quarto/**
 .github/**
-assets/bootstrap-grid.min.css
 _extensions/
 
 # Common documentation files to ignore
