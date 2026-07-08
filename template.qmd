@@ -6,6 +6,8 @@ format: tutorial-template-html+tutorial
 
 ::: {.callout-important}
 
+You can either delete this `.qmd` file or retain it as a reference to our branding/coloring, although you can also always see the example at [https://lmu-osc.github.io/tutorial-template/template.html](https://lmu-osc.github.io/tutorial-template/template.html).
+
 This page uses the `tutorial-template-html+tutorial` page format by default. You can also edit the page `yaml` to use `tutorial-template-html+base` which just exports the `osc-brand-html` format which is a simplified version. 
 
 
