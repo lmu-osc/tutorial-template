@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21263721.svg)](https://doi.org/10.5281/zenodo.21263721)
+
 # Tutorial Template
 
 This repository is a starter template for Quarto-based OSC tutorials. It provides a simple, accessible structure you can copy and adapt to publish a small course or tutorial website.
