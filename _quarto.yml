@@ -1,6 +1,7 @@
 # Begin Project
 project:
   type: tutorial-template
+  # FYI: the tutorial-template project type is defined in the lmu-osc/tutorial-template extension
 # End Project
 
 # Begin Website
