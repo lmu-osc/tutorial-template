@@ -1,0 +1,5 @@
+!.*
+.posit/
+.quarto/
+.git/
+.quartoignore
