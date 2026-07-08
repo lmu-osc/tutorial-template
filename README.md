@@ -17,9 +17,10 @@ This README only serves as a brief documentation page. Details of the repo and h
 Assuming you are a member of the lmu-osc GitHub Organization, you will likely have the rights to create new repos in our org. In particular, you can create new repos from an existing template i.e. using the `tutorial-template` repo. Choose this option when creating your new repo, and follow these instructions:
 
 ```bash
-git clone git@github.com:lmu-osc/YOUR-REPO.git
-cd YOUR-REPO
-quarto add lmu-osc/osc-brand --embed tutorial-template --no-prompt # embeds the newest OSC branding extension into the template
+quarto use template lmu-osc/tutorial-template
+# if you created the project into a subfolder, then run: 
+# cd YOUR-FOLDER
+mv CITATION-template.cff CITATION.cff
 quarto preview
 ```
 

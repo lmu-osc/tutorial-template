@@ -4,3 +4,4 @@
 .git/
 .quartoignore
 .github/workflows/update-branding.yml
+CITATION.cff
