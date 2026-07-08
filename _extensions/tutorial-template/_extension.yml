@@ -18,8 +18,6 @@ contributes:
       page-navigation: true
       # favicon: Quarto  detects the "small" image from the brand file automatically
       reader-mode: true
-      smooth-scroll: true
-      footnotes-hover: true
       navbar:
         background: primary
         logo: small
@@ -35,6 +33,8 @@ contributes:
       code-tools: true
       code-overflow: wrap
       code-link: true
+      smooth-scroll: true
+      footnotes-hover: true
       grid:
         sidebar-width: 300px
       css:
