@@ -11,6 +11,7 @@ Top-level files and directories you'll commonly interact with:
 - `index.qmd` — The site homepage content i.e. the landing page when someone opens the link to the tutorial. This should generally be an overview of the tutorial + necessary software information.
 - `about.qmd` — An example about page for your tutorial. It's main role is to contain License, Citation, and Contributor information.
 - `CITATION.cff` — Citation metadata for your project (authors, affiliations, ORCID, etc.). See the official  [CITATION.cff](https://citation-file-format.github.io/) documentation or sent an OSC member a message if it's unclear how to fill this in.
+    - Note: you can also spot-check whether this is valid in R by running `install.packages("cffr"); cffr::cff_validate()`.
 - `LICENSE.md` and `LICENSE-CODE.md` — License text for content and code respectively. We use CC-BY-SA 4.0 and CC0 1.0 Universal for authored content and code, respectively.
 - `lmu-osc-custom.scss` — Site-specific SCSS tweaks; add branding or small visual changes here.
 - `styles.css` — Additional CSS classes for page content (e.g., `.center`, `.img-border`, `.output-overflow`). Edit this file for content-level styling.
