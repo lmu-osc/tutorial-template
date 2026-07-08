@@ -5,25 +5,16 @@ authors:
     given-names: "Patrick"
     orcid: "https://orcid.org/0000-0003-1769-7580"
     email: "patricktcallahan18@gmail.com"
-    affiliation:
-      - name: "LMU Open Science Center"
-        ror: "https://ror.org/05591te55"
-title: "Tutorial Template"
-description: "A template website for the LMU Open Science Center's tutorials"
-version: 1.0.0
+    affiliation: "LMU Open Science Center"
+title: "OSC Tutorial Template: A Quarto Extension"
+abstract: "A template website for the LMU Open Science Center's tutorials designed and installable as a Quarto extension"
+version: 1.0.1
 date-released: 2026-07-08
 repository-code: "https://github.com/lmu-osc/tutorial-template"
 url: "https://lmu-osc.github.io/tutorial-template/"
-license: "CC-BY-SA-4.0 AND CC0-1.0"
-preferred-citation:
-  authors:
-    - family-names: "Callahan"
-      given-names: "Patrick"
-  title: "Tutorial Template"
-  year: 2026
-  publisher:
-    name: "LMU Open Science Center"
-    ror: "https://ror.org/05591te55"
-  repository-code: "https://github.com/lmu-osc/tutorial-template"
-  url: "https://lmu-osc.github.io/tutorial-template/"
-  type: "software"
+license: CC0-1.0
+keywords:
+  - Quarto
+  - open science
+  - extensions
+  - website template
