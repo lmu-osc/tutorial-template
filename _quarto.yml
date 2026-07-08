@@ -7,13 +7,13 @@ project:
 repo-url: https://github.com/lmu-osc/REPO-NAME-HERE # REPLACE WITH YOUR REPO URL
 website:
   title: "TUTORIAL TITLE HERE"
+  reader-mode: true
   page-footer:
     border: false
     center: © YYYY Max Mustermann, Erika Musterfrau, AUTHOR NAME. Published by LMU Open Science Center. Licensed under CC BY-SA 4.0.
   search:
     location: sidebar
   repo-url: "{{< meta repo-url >}}"
-  repo-actions: [edit, issue]
   back-to-top-navigation: true
   page-navigation: true
   favicon: assets/lmu-osc-favicon.jpg
@@ -61,16 +61,10 @@ website:
 
 # Begin Format
 format:
-  osc-brand-html:
+  osc-brand-html+tutorial:
     css:
       - assets/bootstrap-grid.min.css
       - footer/footer-style.css
-    toc: true
-    fontsize: 13pt
-    code-overflow: wrap
-    code-link: true
-    grid:
-      sidebar-width: 300px
     include-in-header:
       - file: matomo-analytics.html
     include-after-body:

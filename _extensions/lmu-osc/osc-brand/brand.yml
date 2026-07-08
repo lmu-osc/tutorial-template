@@ -1,4 +1,16 @@
 # minimal brand.yml enabling dark mode
+meta:
+  name:
+    full: LMU Open Science Center
+    short: OSC
+  link:
+    home: https://www.osc.lmu.de/
+    github: https://github.com/lmu-osc
+  description: |
+    Home of open science praxis at Ludwig-Maximilian Universität München.
+  founded: 2019
+  author: Pat Callahan
+
 # replace with your brand colors, logos, and typography!
 color:
   palette:
@@ -56,10 +68,51 @@ logo:
     dark:
       path: lmu-osc-logo-dark.svg
       alt: "LMU Open Science Center logo"
+    large:
+      path: lmu-osc-logo-large.jpg
+      alt: "LMU Open Science Center logo, large"
   small: icon
   medium:
     light: default
     dark: dark
   large:
-    light: default
-    dark: dark
+    light: large
+    dark: large
+
+# https://www.lmu.de/de/die-lmu/struktur/zentrale-universitaetsverwaltung/presse-und-kommunikation-puk/lmu-brand-guide/designgrundsaetze/schrift/
+# Compatil is the official font, but license limited. Online content should use Roboto, and other software e.g. presentations use Arial
+typography:
+  fonts:
+    - family: Roboto
+      source: google
+    - family: Arial
+      source: google
+    - family: Fira Code
+      source: google
+  base:
+    family: "Roboto, Arial"
+    # size:
+    # line-height:
+    # weight:
+    # style:
+  headings:
+    family: "Roboto, Arial"
+    color: secondary
+  monospace:
+    family: "Fira Code"
+    # size:
+    # weight:
+  monospace-inline:
+    family: "Fira Code"
+    # color:
+    # background-color:
+  monospace-block:
+    family: "Fira Code"
+    # line-height:
+    # color:
+    # background-color:
+  # link:
+  #   weight:
+  #   color:
+  #   background-color:
+  #   decoration:
