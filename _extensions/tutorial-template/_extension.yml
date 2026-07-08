@@ -10,11 +10,6 @@ contributes:
   project:
     project:
       type: website
-    # can't do include-in-header for the matomo-analytics.html file here
-    # paths aren't resolved from project root, and users need to be able
-    # to update that HTML file directly
-    include-after-body:
-      - file: footer/footer.html
     website:
       search:
         location: sidebar
@@ -43,6 +38,5 @@ contributes:
       grid:
         sidebar-width: 300px
       css:
-        - footer/footer-style.css
         - assets/bootstrap-grid.min.css
     html+base: osc-brand-html
