@@ -1,17 +1,17 @@
-name: Update Tutorial Template Extension
+name: Update Tutorial Template Embedded Branding
 
 on:
   schedule:
-    - cron: "0 0 2 * *"
+    - cron: "0 0 1 * *"
   workflow_dispatch:
 
 permissions: read-all
 
 jobs:
-  update-downstream-tutorials:
+  updates-from-osc-brand:
     # prevent action from running in actual extension repo--else, recursive installations
     # only users of the extension should have these auto-updates
-    if: github.repository != 'lmu-osc/tutorial-template'
+    if: github.repository == 'lmu-osc/tutorial-template'
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -25,8 +25,8 @@ jobs:
         uses: quarto-dev/quarto-actions/setup@v2
 
       - name: Update tutorial-template extension
-        run: quarto update lmu-osc/tutorial-template --no-prompt
+        run: quarto add lmu-osc/osc-brand --embed tutorial-template --no-prompt
 
       - uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: "Update tutorial-template extension (GHA)"
+          commit_message: "Update the embedded osc-brand extension (GHA)"
