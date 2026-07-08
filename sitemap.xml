@@ -2,54 +2,58 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://lmu-osc.github.io/tutorial-template/index.html</loc>
-    <lastmod>2026-07-08T13:31:44.942Z</lastmod>
+    <lastmod>2026-07-08T13:50:53.248Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/tutorial-template/LICENSE-CODE.html</loc>
-    <lastmod>2026-07-08T13:31:44.939Z</lastmod>
+    <lastmod>2026-07-08T13:50:53.246Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/tutorial-template/topic-one/page-two.html</loc>
-    <lastmod>2026-07-08T13:31:44.942Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/tutorial-template/footer/imprint.html</loc>
-    <lastmod>2026-07-08T13:31:44.942Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/tutorial-template/topic-two/page-three.html</loc>
-    <lastmod>2026-07-08T13:31:44.942Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/tutorial-template/topic-two/page-two.html</loc>
-    <lastmod>2026-07-08T13:31:44.942Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/tutorial-template/topic-two/page-one.html</loc>
-    <lastmod>2026-07-08T13:31:44.942Z</lastmod>
-  </url>
-  <url>
-    <loc>https://lmu-osc.github.io/tutorial-template/footer/privacy.html</loc>
-    <lastmod>2026-07-08T13:31:44.942Z</lastmod>
+    <lastmod>2026-07-08T13:50:53.249Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/tutorial-template/footer/accessibilty.html</loc>
-    <lastmod>2026-07-08T13:31:44.941Z</lastmod>
+    <lastmod>2026-07-08T13:50:53.248Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/tutorial-template/footer/privacy.html</loc>
+    <lastmod>2026-07-08T13:50:53.248Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/tutorial-template/topic-two/page-one.html</loc>
+    <lastmod>2026-07-08T13:50:53.249Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/tutorial-template/topic-two/page-two.html</loc>
+    <lastmod>2026-07-08T13:50:53.249Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/tutorial-template/topic-two/page-three.html</loc>
+    <lastmod>2026-07-08T13:50:53.249Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/tutorial-template/footer/imprint.html</loc>
+    <lastmod>2026-07-08T13:50:53.248Z</lastmod>
+  </url>
+  <url>
+    <loc>https://lmu-osc.github.io/tutorial-template/README-template.html</loc>
+    <lastmod>2026-07-08T13:50:53.246Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/tutorial-template/topic-one/page-one.html</loc>
-    <lastmod>2026-07-08T13:31:44.942Z</lastmod>
+    <lastmod>2026-07-08T13:50:53.249Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/tutorial-template/LICENSE.html</loc>
-    <lastmod>2026-07-08T13:31:44.939Z</lastmod>
+    <lastmod>2026-07-08T13:50:53.246Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/tutorial-template/about.html</loc>
-    <lastmod>2026-07-08T13:31:44.940Z</lastmod>
+    <lastmod>2026-07-08T13:50:53.247Z</lastmod>
   </url>
   <url>
     <loc>https://lmu-osc.github.io/tutorial-template/template.html</loc>
-    <lastmod>2026-07-08T13:31:44.942Z</lastmod>
+    <lastmod>2026-07-08T13:50:53.248Z</lastmod>
   </url>
 </urlset>
