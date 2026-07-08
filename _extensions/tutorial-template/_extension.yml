@@ -36,6 +36,8 @@ contributes:
       code-link: true
       smooth-scroll: true
       footnotes-hover: true
+      link-external-icon: true
+      link-external-newwindow: true
       grid:
         sidebar-width: 300px
       css:
