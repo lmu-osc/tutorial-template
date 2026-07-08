@@ -71,3 +71,5 @@ format:
 # Begin Editor
 editor: source
 # End Editor
+
+bibliography: references.bib
