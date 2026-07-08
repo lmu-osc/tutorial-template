@@ -33,11 +33,14 @@ contributes:
       toc-title: " "
       code-tools: true
       code-overflow: wrap
+      code-copy: true
       code-link: true
       smooth-scroll: true
-      footnotes-hover: true
       link-external-icon: true
       link-external-newwindow: true
+      footnotes-hover: true
+      citations-hover: true
+      crossrefs-hover: true
       grid:
         sidebar-width: 300px
       css:
