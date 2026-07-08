@@ -21,6 +21,13 @@ contributes:
       navbar:
         background: primary
         logo: small
+      css:
+        - footer/footer-style.css
+        - assets/bootstrap-grid.min.css
+      include-in-header:
+        - file: matomo-analytics.html
+      include-after-body:
+        - file: footer/footer.html
     format: tutorial-template-html+tutorial
   formats:
     html+tutorial:
@@ -37,11 +44,4 @@ contributes:
       footnotes-hover: true
       grid:
         sidebar-width: 300px
-      css:
-        - footer/footer-style.css
-        - assets/bootstrap-grid.min.css
-      include-in-header:
-        - file: matomo-analytics.html
-      include-after-body:
-        - file: footer/footer.html
     html+base: osc-brand-html
