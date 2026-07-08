@@ -4,7 +4,7 @@ This repository is a starter template for Quarto-based OSC tutorials. It provide
 
 ## Primary Documentation
 
-This README only serves as a brief documentation page. Details of the repo and how to adapt it for other tutorials can be found at our publicly-available manual in the [Authoring Tutorials for the OSC](https://lmu-osc.github.io/manual/authoring-tutorials/) section and at the [README-template.md].
+This README only serves as a brief documentation page. Details of the repo and how to adapt it for other tutorials can be found at our publicly-available manual in the [Authoring Tutorials for the OSC](https://lmu-osc.github.io/manual/authoring-tutorials/) section and at the [README-template.md](README-template.md).
 
 ## Quick overview
 
