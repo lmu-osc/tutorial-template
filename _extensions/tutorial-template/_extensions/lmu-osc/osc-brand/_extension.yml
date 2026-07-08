@@ -14,19 +14,3 @@ contributes:
       theme:
         light: [flatly, brand, lmu-osc-custom.scss]
         dark: [darkly, brand, lmu-osc-custom.scss]
-    html+tutorial:
-      theme:
-        light: [flatly, brand, lmu-osc-custom.scss]
-        dark: [darkly, brand, lmu-osc-custom.scss]
-      toc: true
-      toc-title: " "
-      code-tools: true
-      code-overflow: wrap
-      code-link: true
-      logo: small
-      smooth-scroll: true
-      footnotes-hover: true
-      repo-actions: [edit, source, issue] # only works in conjunction with a repo-url being set
-      grid:
-        sidebar-width: 300px
-      # include footer here?
