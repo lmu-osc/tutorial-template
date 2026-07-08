@@ -80,9 +80,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-e7c471939560e2f6eb964f999844d0dd.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-5e1928f7e929b16d0da4c323d3e49368.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-b403a5fa95f7b3bf34f3fbf9e5e00e3e.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-5e1928f7e929b16d0da4c323d3e49368.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-30db4273b9046ee98e92677e57b7937c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-27fc00f0cf591817859132d7e0ce75ab.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-30db4273b9046ee98e92677e57b7937c.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -445,7 +445,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
         <nav id="TOC" role="doc-toc" class="toc-active">
    
   <ul>
-  <li><a href="#template" id="toc-template" class="nav-link active" data-scroll-target="#template">&lt;Template&gt;</a>
+  <li><a href="#tutorial-template" id="toc-tutorial-template" class="nav-link active" data-scroll-target="#tutorial-template">&lt;Tutorial Template&gt;</a>
   <ul class="collapse">
   <li><a href="#structure-overview" id="toc-structure-overview" class="nav-link" data-scroll-target="#structure-overview">Structure Overview</a></li>
   <li><a href="#running-actions-for-non-technical-contributors" id="toc-running-actions-for-non-technical-contributors" class="nav-link" data-scroll-target="#running-actions-for-non-technical-contributors">Running Actions (for non-technical contributors)</a></li>
@@ -461,8 +461,8 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 
 
 
-<section id="template" class="level1">
-<h1>&lt;Template&gt;</h1>
+<section id="tutorial-template" class="level1">
+<h1>&lt;Tutorial Template&gt;</h1>
 <section id="structure-overview" class="level2">
 <h2 class="anchored" data-anchor-id="structure-overview">Structure Overview</h2>
 <p>Top-level files and directories you’ll commonly interact with:</p>
@@ -470,7 +470,10 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 <li><code>_quarto.yml</code> — Site configuration (title, navigation, output settings, theme). Update this to change the site title, navigation order, or basic site settings. We already have a multitude of presets in place here, but feel free to look at Quarto’s documentation for further options.</li>
 <li><code>index.qmd</code> — The site homepage content i.e.&nbsp;the landing page when someone opens the link to the tutorial. This should generally be an overview of the tutorial + necessary software information.</li>
 <li><code>about.qmd</code> — An example about page for your tutorial. It’s main role is to contain License, Citation, and Contributor information.</li>
-<li><code>CITATION.cff</code> — Citation metadata for your project (authors, affiliations, ORCID, etc.). See the official <a href="https://citation-file-format.github.io/">CITATION.cff</a> documentation or sent an OSC member a message if it’s unclear how to fill this in.</li>
+<li><code>CITATION.cff</code> — Citation metadata for your project (authors, affiliations, ORCID, etc.). See the official <a href="https://citation-file-format.github.io/">CITATION.cff</a> documentation or sent an OSC member a message if it’s unclear how to fill this in.
+<ul>
+<li>Note: you can also spot-check whether this is valid in R by running <code>install.packages("cffr"); cffr::cff_validate()</code>.</li>
+</ul></li>
 <li><code>LICENSE.md</code> and <code>LICENSE-CODE.md</code> — License text for content and code respectively. We use CC-BY-SA 4.0 and CC0 1.0 Universal for authored content and code, respectively.</li>
 <li><code>lmu-osc-custom.scss</code> — Site-specific SCSS tweaks; add branding or small visual changes here.</li>
 <li><code>styles.css</code> — Additional CSS classes for page content (e.g., <code>.center</code>, <code>.img-border</code>, <code>.output-overflow</code>). Edit this file for content-level styling.</li>
@@ -660,6 +663,13 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            // default icon
+            link.classList.add("external");
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -973,7 +983,7 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># &lt;\Tutorial Template&gt;</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># \&lt;Tutorial Template\&gt;</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
@@ -986,36 +996,37 @@ if (location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`index.qmd`</span> — The site homepage content i.e. the landing page when someone opens the link to the tutorial. This should generally be an overview of the tutorial + necessary software information.</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`about.qmd`</span> — An example about page for your tutorial. It's main role is to contain License, Citation, and Contributor information.</span>
 <span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`CITATION.cff`</span> — Citation metadata for your project (authors, affiliations, ORCID, etc.). See the official  <span class="co">[</span><span class="ot">CITATION.cff</span><span class="co">](https://citation-file-format.github.io/)</span> documentation or sent an OSC member a message if it's unclear how to fill this in.</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`LICENSE.md`</span> and <span class="in">`LICENSE-CODE.md`</span> — License text for content and code respectively. We use CC-BY-SA 4.0 and CC0 1.0 Universal for authored content and code, respectively.</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`lmu-osc-custom.scss`</span> — Site-specific SCSS tweaks; add branding or small visual changes here.</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`styles.css`</span> — Additional CSS classes for page content (e.g., <span class="in">`.center`</span>, <span class="in">`.img-border`</span>, <span class="in">`.output-overflow`</span>). Edit this file for content-level styling.</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`matomo-analytics.html`</span> — Analytics snippet (managed by OSC staff; do not edit unless instructed).</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`assets/`</span> — Images, downloads, and other static files used by the site.</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`topic-one/`</span>, <span class="in">`topic-two/`</span>, ... — Example topic folders containing <span class="in">`.qmd`</span> pages for tutorial sections. Replace or rename these to match your content.</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`_site/`</span> — Generated site files (output). You normally do not edit this folder directly — it's produced when you build the site.</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`.filenameignore`</span> — Patterns ignored by the automated filename check workflow. Add paths here if the workflow flags files that should be skipped.</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`.gitignore`</span> — Files and directories Git should ignore (e.g., history files, temporary R output). Edit if your project generates new temporary files.</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>If you want to change what appears in the site's navigation, edit the <span class="in">`sidebar:`</span> and <span class="in">`navbar:`</span> sections in <span class="in">`_quarto.yml`</span>.</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>Note: you can also spot-check whether this is valid in R by running <span class="in">`install.packages("cffr"); cffr::cff_validate()`</span>.</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`LICENSE.md`</span> and <span class="in">`LICENSE-CODE.md`</span> — License text for content and code respectively. We use CC-BY-SA 4.0 and CC0 1.0 Universal for authored content and code, respectively.</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`lmu-osc-custom.scss`</span> — Site-specific SCSS tweaks; add branding or small visual changes here.</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`styles.css`</span> — Additional CSS classes for page content (e.g., <span class="in">`.center`</span>, <span class="in">`.img-border`</span>, <span class="in">`.output-overflow`</span>). Edit this file for content-level styling.</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`matomo-analytics.html`</span> — Analytics snippet (managed by OSC staff; do not edit unless instructed).</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`assets/`</span> — Images, downloads, and other static files used by the site.</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`topic-one/`</span>, <span class="in">`topic-two/`</span>, ... — Example topic folders containing <span class="in">`.qmd`</span> pages for tutorial sections. Replace or rename these to match your content.</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`_site/`</span> — Generated site files (output). You normally do not edit this folder directly — it's produced when you build the site.</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`.filenameignore`</span> — Patterns ignored by the automated filename check workflow. Add paths here if the workflow flags files that should be skipped.</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span><span class="in">`.gitignore`</span> — Files and directories Git should ignore (e.g., history files, temporary R output). Edit if your project generates new temporary files.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>If you want to change what appears in the site's navigation, edit the <span class="in">`sidebar:`</span> and <span class="in">`navbar:`</span> sections in <span class="in">`_quarto.yml`</span>.</span>
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a><span class="fu">## Running Actions (for non-technical contributors)</span></span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>This template has several automations in place to help ensure consistency across our repositories, namely a citation file checker, a filename checker, an automation for publishing the site, and a code style formatter. You can see details at <span class="in">`.github/workflows/README.md`</span> if interested, but it's not required to know these details by any means.</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If you need to run a repository workflow (for example to re-render the site), open this repository on GitHub and click the **Actions** tab.</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Select the workflow you want (examples: "Render Quarto Site", "Check CITATION.cff", "Filename Checks", "Tidyverse Style Formatting").</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Click **Run workflow**, and then select the branch you want to test a workflow on from the "Branch:" dropdown. Then click **Run workflow** again to start it.</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>After the workflow starts, you can monitor progress on the same page and inspect step logs if something fails. If you are unsure what to do after a failure, open a GitHub issue and paste the error or screenshot.</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If you do not see the **Run workflow** button, you can still make changes by editing files and pushing them to GitHub; the workflows that trigger on <span class="in">`push`</span> will run automatically.</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">## Conventions and tips</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>File names: lowercase and kebab-case (e.g. <span class="in">`my-topic/my-page.qmd`</span>).</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Content: use plain text and simple Markdown/Quarto; avoid embedding complex web widgets unless needed.</span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Collaboration: edit content on GitHub using branches and pull requests so teammates can review changes.</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a><span class="fu">## Running Actions (for non-technical contributors)</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>This template has several automations in place to help ensure consistency across our repositories, namely a citation file checker, a filename checker, an automation for publishing the site, and a code style formatter. You can see details at <span class="in">`.github/workflows/README.md`</span> if interested, but it's not required to know these details by any means.</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If you need to run a repository workflow (for example to re-render the site), open this repository on GitHub and click the **Actions** tab.</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Select the workflow you want (examples: "Render Quarto Site", "Check CITATION.cff", "Filename Checks", "Tidyverse Style Formatting").</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Click **Run workflow**, and then select the branch you want to test a workflow on from the "Branch:" dropdown. Then click **Run workflow** again to start it.</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>After the workflow starts, you can monitor progress on the same page and inspect step logs if something fails. If you are unsure what to do after a failure, open a GitHub issue and paste the error or screenshot.</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>If you do not see the **Run workflow** button, you can still make changes by editing files and pushing them to GitHub; the workflows that trigger on <span class="in">`push`</span> will run automatically.</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Conventions and tips</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>File names: lowercase and kebab-case (e.g. <span class="in">`my-topic/my-page.qmd`</span>).</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Content: use plain text and simple Markdown/Quarto; avoid embedding complex web widgets unless needed.</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Collaboration: edit content on GitHub using branches and pull requests so teammates can review changes.</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">
