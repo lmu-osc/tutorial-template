@@ -8,7 +8,7 @@ authors:
     affiliation: "LMU Open Science Center"
 title: "LMU Open Science Center Tutorial Template: A Quarto Extension"
 abstract: "A template website for the LMU Open Science Center's tutorials designed and installable as a Quarto extension"
-version: 1.0.2
+version: 1.0.3
 doi: 10.5281/zenodo.21263721
 date-released: 2026-07-08
 repository-code: "https://github.com/lmu-osc/tutorial-template"
