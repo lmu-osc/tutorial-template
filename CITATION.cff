@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this template to create a tutorial, please cite it as below."
+authors:
+  - family-names: "Callahan"
+    given-names: "Patrick"
+    orcid: "https://orcid.org/0000-0003-1769-7580"
+    email: "patricktcallahan18@gmail.com"
+    affiliation: "LMU Open Science Center"
+title: "LMU Open Science Center Tutorial Template: A Quarto Extension"
+abstract: "A template website for the LMU Open Science Center's tutorials designed and installable as a Quarto extension"
+version: 1.0.4
+doi: 10.5281/zenodo.21263721
+date-released: 2026-07-08
+repository-code: "https://github.com/lmu-osc/tutorial-template"
+url: "https://lmu-osc.github.io/tutorial-template/"
+license: CC0-1.0
+keywords:
+  - Quarto
+  - open science
+  - extensions
+  - website template
