@@ -4,6 +4,13 @@ subtitle: A subtitle for your tutorial
 description: A brief description of your tutorial (if you want to include this). Google uses this description in search results, so make it informative and concise.
 ---
 
+```{r}
+#| eval: true
+#| echo: false
+#| warning: false
+library(downlit)
+```
+
 THIS IS YOUR HOME PAGE FILE. DO NOT RENAME OR DELETE THIS FILE.
 
 When writing our tutorial, please adhere to proper nesting of your headers. That is, you should always nest in this order:
