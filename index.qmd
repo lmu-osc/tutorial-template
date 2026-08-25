@@ -8,7 +8,10 @@ description: A brief description of your tutorial (if you want to include this).
 #| eval: true
 #| echo: false
 #| warning: false
+
+# retain this code chunk to allow code linking--must have downlit and xml2 captured by renv
 library(downlit)
+library(xml2)
 ```
 
 THIS IS YOUR HOME PAGE FILE. DO NOT RENAME OR DELETE THIS FILE.
